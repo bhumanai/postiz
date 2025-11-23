@@ -38,7 +38,7 @@ Optional: S3 creds, Resend key, OAuth client secrets for LinkedIn/X/etc.
 
 ### Run on RunPod
 
-1. Push the image above to a registry accessible from RunPod (Docker Hub, ECR, GHCR, etc.).
+1. Point RunPod’s GitHub integration at this repo/branch and redeploy (RunPod builds from the Dockerfile automatically).
 2. Create a Secure Cloud pod (CPU is fine).
 3. Add a persistent volume and mount it to `/data` (then set `UPLOAD_DIRECTORY=/data/uploads`).
 4. Add the environment variables/secrets listed above.

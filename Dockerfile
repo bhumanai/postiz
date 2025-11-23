@@ -9,7 +9,7 @@ WORKDIR /app
 ARG POSTIZ_REPO=https://github.com/gitroomhq/postiz-app.git
 ARG POSTIZ_REF=main
 
-RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y git python3 build-essential && rm -rf /var/lib/apt/lists/*
 
 RUN git clone --depth 1 -b ${POSTIZ_REF} ${POSTIZ_REPO} /tmp/postiz
 
