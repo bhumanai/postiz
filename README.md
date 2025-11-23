@@ -47,3 +47,4 @@ Optional: S3 creds, Resend key, OAuth client secrets for LinkedIn/X/etc.
 7. Redeploy Speakeasy, finish a video, click **Share**, connect a channel, and post.
 
 That’s it—you now have a dedicated Postiz backend powering Speakeasy’s social publishing from RunPod.
+# redeploy trigger
